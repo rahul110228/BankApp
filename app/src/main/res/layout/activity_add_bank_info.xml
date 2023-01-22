@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_report_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddBankInfoActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_500">
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:backgroundTint="@color/white"/>
+
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@drawable/icon" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:textColor="@color/global_textcolor"
+            android:layout_gravity="center"
+            android:textSize="@dimen/global_textsize"
+            android:textStyle="bold"
+            android:text="Add Bank Info"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Bank ID :"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txt_bank_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="123456"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_textsize"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="textCapCharacters"
+            android:hint="Enter Bank Name"/>
+
+        <EditText
+            android:id="@+id/et_branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_textsize"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="text"
+            android:hint="Enter Branch Name"/>
+
+        <EditText
+            android:id="@+id/et_routing_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_textsize"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="number"
+            android:hint="Enter Routing Number"/>
+
+        <Button
+            android:id="@+id/btn_save_bank_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="SAVE"
+            android:background="@drawable/home_button_sky_bg"
+            android:textSize="@dimen/global_textsize"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

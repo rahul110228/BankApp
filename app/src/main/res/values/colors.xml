@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#00BCD4</color>
+    <color name="purple_500">#03A9F4</color>
+    <color name="purple_700">#2196F3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#AC0314</color>
+    <color name="splash_screen_background">#E6E3E3</color>
+    <color name="splash_screen_background_start_end">#B9B9B9</color>
+    <color name="background_dark">#900211</color>
+    <color name="global_textcolor">#2A72CA</color>
+    <color name="et_gradient_startcolor">#FE0000 </color>
+    <color name="et_gradient_endcolor">#AA0505</color>
+    <color name="navbar_centercolor">#AC0314</color>
+    <color name="navbar_endcolor">#7E020E</color>
+    <color name="navbar_startcolor">#DD4444</color>
+    <color name="button_startcolor">#99000F</color>
+    <color name="edittex_startcolor">#7F0D19</color>
+    <color name="button_endcolor">#F40000</color>
+    <color name="home_grey_btn_start">#5E5F66</color>
+    <color name="home_grey_btn_end">#98979C</color>
+    <color name="navigation_item_bg">#121212</color>
+    <color name="navigation_item_image_tint">#B5B6BC</color>
+    <color name="navigation_item_logout">#D90230</color>
+    <color name="button_bg">#2A72CA</color>
+    <color name="not_assign">#03A9F4</color>
+    <color name="orrange">#FF9800</color>
+    <color name="yellow">#FFC107</color>
+
+
+    <color name="content_main_background">#E7E6E6</color>
+    <color name="report_animation_background">#F3F1F1</color>
+</resources>

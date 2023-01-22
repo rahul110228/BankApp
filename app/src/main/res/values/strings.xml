@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bank App</string>
+    <string name="title_bank_info">Bank Info</string>
+    <string name="title_transactions">Transactions</string>
+    <string name="add_bank">Add Bank</string>
+    <string name="empty_list_text">No Bank Found!!!</string>
+    <string name="empty_transaction_text">No Transaction Found!!!</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_delete">DELETE</string>
+
+</resources>

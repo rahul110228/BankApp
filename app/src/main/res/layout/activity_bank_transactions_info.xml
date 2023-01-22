@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_report_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddBankInfoActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_500">
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:backgroundTint="@color/white"/>
+
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@drawable/icon" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".80"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="FROM"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_from_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_mid_textsize"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="textCapCharacters"
+            android:hint="Enter Sender Bank Name"/>
+
+        <EditText
+            android:id="@+id/et_from_branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_mid_textsize"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="text"
+            android:hint="Enter Sender Bank Branch Name"/>
+
+        <EditText
+            android:id="@+id/et_from_account_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_mid_textsize"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="number"
+            android:hint="Enter Sender Account Number"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".80"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="TO"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_to_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_mid_textsize"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="textCapCharacters"
+            android:hint="Enter Receiver Bank Name"/>
+
+        <EditText
+            android:id="@+id/et_to_branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_mid_textsize"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="text"
+            android:hint="Enter Receiver Bank Branch Name"/>
+
+        <EditText
+            android:id="@+id/et_to_account_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_mid_textsize"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="number"
+            android:hint="Enter Receiver Account Number"/>
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/et_padding_start"
+            android:paddingLeft="@dimen/et_padding_start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/global_margin"
+            android:textSize="@dimen/global_textsize"
+            android:maxLines="1"
+            android:minLines="1"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/et_global_padding"
+            android:inputType="number"
+            android:hint="Enter Amount in BDT"/>
+
+        <Button
+            android:id="@+id/btn_send_money"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_button_sky_bg"
+            android:text="SEND"
+            android:textColor="@color/white"
+            android:textSize="@dimen/global_textsize" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
